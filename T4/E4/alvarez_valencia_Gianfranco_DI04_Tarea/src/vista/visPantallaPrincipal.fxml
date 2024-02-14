@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VisPantallaPrincipalController">
+   <top>
+      <MenuBar id="MenuBarReservas" fx:id="MenuBarReservas" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu id="MenuReservas" fx:id="MenuBar" mnemonicParsing="false" text="Bar">
+            <items>
+              <MenuItem id="MenuItem_NuevaReserva" fx:id="MenuItemListarMesas" mnemonicParsing="false" onAction="#listarMesas" text="Listar mesas" />
+                  <MenuItem id="MenuItem_NuevaReserva" fx:id="MenuItemListarReservas" mnemonicParsing="false" onAction="#listarReservas" text="Listar reservas" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Button fx:id="ButtonNuevaRserva" mnemonicParsing="false" onAction="#nuevaReserva" prefHeight="44.0" prefWidth="157.0" styleClass="big-yellow" stylesheets="@estilo.css" text="Listar reservas" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

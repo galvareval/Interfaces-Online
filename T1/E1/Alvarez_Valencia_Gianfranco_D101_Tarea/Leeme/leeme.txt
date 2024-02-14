@@ -1,0 +1,2 @@
+Las dificultades que he enecontrado al realizar la tarea fueron la version de netbeans.
+Al final la he hecho con la v 8.0.1 jdk7

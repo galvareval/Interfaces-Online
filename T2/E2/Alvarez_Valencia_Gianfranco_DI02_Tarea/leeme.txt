@@ -1,0 +1,3 @@
+Empece usando netbeans 8.0.1, JDK 1.8 Scene Builder 2.0 pero al poner el datepicker no me salia en el netbeans.
+Cambiando a Netbeans 12.5 se solucionó.
+ 

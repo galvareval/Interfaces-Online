@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneNuevaReserva" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VisNuevaReservafxController">
+   <children>
+      <Label fx:id="labelNuevaRserva" layoutX="262.0" layoutY="32.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Nueva reserva" />
+      <Separator prefWidth="200.0" />
+      <Separator fx:id="separatorNuevaReserva" layoutX="27.0" layoutY="57.0" prefHeight="3.0" prefWidth="534.0" />
+      <Label fx:id="labelNombre" layoutX="16.0" layoutY="78.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Nombre:" />
+      <TextField fx:id="texFieldNombre" layoutX="145.0" layoutY="74.0" prefHeight="25.0" prefWidth="398.0" styleClass="ipad-dark-grey" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipeNombre" text="Inerte el nombre" />
+         </tooltip></TextField>
+      <TextField fx:id="texFieldApellidos" layoutX="145.0" layoutY="106.0" prefHeight="25.0" prefWidth="398.0" styleClass="ipad-dark-grey" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipApellidos" text="Inserte apellidos" />
+         </tooltip></TextField>
+      <Label fx:id="labelApellidos" layoutX="13.0" layoutY="110.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Apellidos:" textFill="#282825" />
+      <TextField fx:id="texFieldTelefono" layoutX="145.0" layoutY="136.0" prefHeight="25.0" prefWidth="398.0" styleClass="ipad-dark-grey" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipTelefono" text="Inserte número de telefono" />
+         </tooltip></TextField>
+      <Label fx:id="labelTelefono" layoutX="16.0" layoutY="140.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Teléfono" />
+      <Separator fx:id="separatorNuevaReserva2" layoutX="33.0" layoutY="174.0" prefHeight="3.0" prefWidth="534.0" />
+      <Label fx:id="labelFechaEvento" layoutX="16.0" layoutY="183.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Fecha Evento" />
+      <DatePicker fx:id="DatePickerFechaEvento" layoutX="145.0" layoutY="179.0" prefHeight="25.0" prefWidth="398.0" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipeFechaEvento" text="Seleccione la fecha del evento" />
+         </tooltip></DatePicker>
+      <TitledPane fx:id="TitledPaneDatosFestival" animated="false" collapsible="false" layoutX="145.0" layoutY="247.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="398.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Datos para el festival" textAlignment="CENTER" wrapText="true">
+        <content>
+          <AnchorPane fx:id="anchorPaneTipoFestival" minHeight="0.0" minWidth="0.0" prefHeight="105.0" prefWidth="396.0" scaleShape="false" styleClass="colorFuente" stylesheets="@estilo.css">
+               <children>
+                  <Label fx:id="labelNumeroDias" layoutX="27.0" layoutY="14.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Número de días: " />
+                  <TextField fx:id="textFieldNumeroDias" layoutX="139.0" layoutY="10.0" styleClass="ipad-dark-grey" stylesheets="@estilo.css">
+                     <tooltip>
+                        <Tooltip fx:id="toolTipNumDias" text="Inserte el número de días del festival" />
+                     </tooltip></TextField>
+                  <Label fx:id="labelRequierePulsera" layoutX="27.0" layoutY="47.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Requiere pulsera" />
+                  <CheckBox fx:id="checkBoxPulsera" layoutX="139.0" layoutY="47.0" mnemonicParsing="false" stylesheets="@estilo.css">
+                     <tooltip>
+                        <Tooltip fx:id="toolTipPulsera" text="Seleccionar si se van a usar pulseras" />
+                     </tooltip></CheckBox>
+                  <ImageView fx:id="imageRock" fitHeight="81.0" fitWidth="93.0" layoutX="318.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/rock.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </TitledPane>
+      <Label fx:id="labelNumeroPersonas" layoutX="16.0" layoutY="380.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Número de personas:" textFill="#cdd61d" />
+      <TextField fx:id="texFieldNumeroPersonas" layoutX="145.0" layoutY="376.0" prefHeight="25.0" prefWidth="70.0" styleClass="ipad-dark-grey" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipNumPersonas" text="Inserte el número de asistentes" />
+         </tooltip></TextField>
+      <Label fx:id="labelTipoSala" layoutX="19.0" layoutY="422.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Tipo de sala" textFill="#cdd61d" />
+      <ComboBox fx:id="comboBoxTiposala" layoutX="145.0" layoutY="418.0" prefHeight="25.0" prefWidth="168.0" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipeTipoSala" text="Seleccionar el tipo de sala" />
+         </tooltip></ComboBox>
+      <ComboBox fx:id="comboBoxTipoevento" layoutX="145.0" layoutY="214.0" onAction="#tipoEvento" prefHeight="25.0" prefWidth="168.0" stylesheets="@estilo.css">
+         <tooltip>
+            <Tooltip fx:id="toolTipeTipoEvento" text="Sleccione el tipo de evento" />
+         </tooltip></ComboBox>
+      <Label fx:id="labellTipoEvento" layoutX="16.0" layoutY="218.0" styleClass="colorFuente" stylesheets="@estilo.css" text="Tipo de evento" />
+      <Button fx:id="buttonReservar" layoutX="439.0" layoutY="453.0" mnemonicParsing="false" onAction="#reservar" styleClass="big-yellow" stylesheets="@estilo.css" text="Reservar">
+         <tooltip>
+            <Tooltip fx:id="toolTipReservar" text="Confirmar la reserva" />
+         </tooltip></Button>
+   </children>
+</Pane>

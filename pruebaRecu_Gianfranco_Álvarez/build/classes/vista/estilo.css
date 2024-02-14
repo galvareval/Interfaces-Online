@@ -1,0 +1,40 @@
+.big-yellow {
+    -fx-background-color: 
+        #ecebe9,
+        rgba(0,0,0,0.05),
+        linear-gradient(#dcca8a, #c7a740),
+        linear-gradient(#f9f2d6 0%, #f4e5bc 20%, #e6c75d 80%, #e2c045 100%),
+        linear-gradient(#f6ebbe, #e6c34d);
+    
+    -fx-background-radius: 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    
+    
+}
+.imgFontSelected {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cdd61d;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+.imgFont {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 27px;
+    -fx-text-fill: #fffbfb;
+    
+}
+
+.fontFondoNegro{
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 12px;
+    -fx-text-fill: #fffbfb;
+}
+
+.fontTitulos{
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 28px;
+    -fx-text-fill: #fffbfb;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaLoginInicioController">
+   <children>
+      <ImageView fx:id="imgviewFondologin" fitHeight="181.0" fitWidth="369.0" layoutY="205.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@IMG/fondoPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="287.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/img_bandas_1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelUsuario" layoutX="75.0" layoutY="255.0" prefHeight="17.0" prefWidth="81.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Usuario" />
+      <TextField fx:id="textFieldUsuario" layoutX="145.0" layoutY="251.0" styleClass="big-yellow" stylesheets="@estilo.css" />
+      <PasswordField fx:id="passwordFieldPsw" layoutX="145.0" layoutY="283.0" onKeyPressed="#entrar" styleClass="big-yellow" stylesheets="@estilo.css" />
+      <Label fx:id="labelContrasena" layoutX="75.0" layoutY="287.0" prefHeight="17.0" prefWidth="81.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Contraseña" />
+      <Button fx:id="buttonIniciarSesion" layoutX="145.0" layoutY="328.0" mnemonicParsing="false" onAction="#iniciarSesion" styleClass="big-yellow" stylesheets="@estilo.css" text="Iniciar sesión" />
+      <Button fx:id="buttonRgistrarse" layoutY="210.0" mnemonicParsing="false" onAction="#regristrarse" styleClass="big-yellow" stylesheets="@estilo.css" text="Registrarse" />
+   </children>
+</AnchorPane>

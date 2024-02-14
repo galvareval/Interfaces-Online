@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="349.0" prefWidth="360.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaGestionBandasController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="368.0" fitWidth="360.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@IMG/fondoPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labeNuevaBanda" layoutX="86.0" layoutY="8.0" prefHeight="59.0" prefWidth="222.0" styleClass="fontTitulos" stylesheets="@estilo.css" text="Nueva Banda" textAlignment="RIGHT" textFill="WHITE" />
+      <TextField fx:id="textFieldNombreBanda" layoutX="150.0" layoutY="86.0" styleClass="big-yellow" stylesheets="@estilo.css" />
+      <Label fx:id="labelNombreBanda" layoutX="49.0" layoutY="90.0" prefHeight="17.0" prefWidth="91.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Nombre banda" />
+      <Label fx:id="labelNombreSala" layoutX="49.0" layoutY="129.0" prefHeight="17.0" prefWidth="91.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Sala" />
+      <ComboBox fx:id="comboNuevaBanda" layoutX="150.0" layoutY="125.0" prefWidth="150.0" promptText="Elegir sala" styleClass="big-yellow" stylesheets="@estilo.css" />
+      <Label fx:id="labelEstilo" layoutX="49.0" layoutY="166.0" prefHeight="17.0" prefWidth="91.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Estilo" />
+      <TextField fx:id="textFieldEstilo" layoutX="150.0" layoutY="162.0" styleClass="big-yellow" stylesheets="@estilo.css" />
+      <Label fx:id="labelAnoFomracion" layoutX="49.0" layoutY="207.0" prefHeight="17.0" prefWidth="91.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Año formación" />
+      <DatePicker fx:id="datePickerBanda" editable="false" layoutX="149.0" layoutY="203.0" prefHeight="25.0" prefWidth="150.0" stylesheets="@estilo.css" />
+      <TextField fx:id="textFieldCache" layoutX="150.0" layoutY="244.0" onKeyPressed="#registrarEnter" styleClass="big-yellow" stylesheets="@estilo.css" />
+      <Label fx:id="labelCache" layoutX="49.0" layoutY="248.0" prefHeight="17.0" prefWidth="91.0" styleClass="fontFondoNegro" stylesheets="@estilo.css" text="Caché" />
+      <Button fx:id="buttonregistrar" layoutX="140.0" layoutY="304.0" mnemonicParsing="false" onAction="#registrarBanda" prefHeight="25.0" prefWidth="91.0" styleClass="big-yellow" stylesheets="@estilo.css" text="Registrar" />
+      <Button fx:id="buttonVolver" layoutX="287.0" layoutY="329.0" mnemonicParsing="false" onAction="#volverBanda" prefHeight="25.0" prefWidth="64.0" styleClass="big-yellow" stylesheets="@estilo.css" text="Volver" />
+   </children>
+</AnchorPane>

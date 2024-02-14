@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Facturas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c3134807-9471-4a85-90a8-d1c4e79c9b2d">
+	<property name="ireport.zoom" value="1.331000000000005"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="tarea5"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[Select ADDRESS.ID, ADDRESS.FIRSTNAME,ADDRESS.LASTNAME,ADDRESS.STREET,ADDRESS.CITY from ADDRESS INNER JOIN DOCUMENT ON DOCUMENT.ADDRESSID=ADDRESS.ID ORDER BY ADDRESS.ID ;]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="address"/>
+	</field>
+	<field name="FIRSTNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="FIRSTNAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="address"/>
+	</field>
+	<field name="LASTNAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="LASTNAME"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="address"/>
+	</field>
+	<field name="STREET" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="STREET"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="address"/>
+	</field>
+	<field name="CITY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="CITY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="address"/>
+	</field>
+	<group name="ADDRESS" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$F{ID}]]></groupExpression>
+		<groupHeader>
+			<band height="60"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="50"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="6" y="0" width="154" height="25" uuid="2df8e48a-430d-4d67-b0cb-a82bdf0a3885"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cliente]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="160" y="10" width="100" height="20" uuid="1f79e973-e53d-40bd-a2ef-50d94283ddbb"/>
+				<textFieldExpression><![CDATA["Apellidos: " + $F{LASTNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="30" width="100" height="20" uuid="0509b15e-95b6-44e9-9e2b-9484adfd5ccf"/>
+				<textFieldExpression><![CDATA[$F{CITY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="30" width="100" height="20" uuid="266759de-be38-447f-905a-277f69240456"/>
+				<textFieldExpression><![CDATA["Dirección: " + $F{STREET}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="10" width="100" height="20" uuid="3a850328-d27f-4086-9f63-2e0b29fa69de"/>
+				<textFieldExpression><![CDATA["Nombre: " + $F{FIRSTNAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="283" splitType="Stretch">
+			<subreport>
+				<reportElement x="17" y="21" width="493" height="230" uuid="b4573211-eb49-448a-8f1d-bee2615a306b"/>
+				<subreportParameter name="AddressID">
+					<subreportParameterExpression><![CDATA[$F{ID}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["iej4_sub.jasper"]]></subreportExpression>
+			</subreport>
+			<break>
+				<reportElement x="0" y="269" width="100" height="1" uuid="8762d471-c974-4168-a53d-c4aee885b89a"/>
+			</break>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50">
+			<break>
+				<reportElement x="0" y="27" width="100" height="1" uuid="0ac05239-f492-4119-8d25-4385ecba3ff2"/>
+			</break>
+		</band>
+	</columnFooter>
+</jasperReport>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaPantallaPrincipalController">
+   <children>
+      <ImageView fitHeight="341.0" fitWidth="417.0" layoutX="-3.0" onMouseMoved="#celarSelec" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@IMG/fondoPrincipal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgSalas" fitHeight="97.0" fitWidth="142.0" layoutX="14.0" layoutY="76.0" onMouseClicked="#gerstionarSalas" onMouseMoved="#selecSalas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/salaMusica.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBandas" fitHeight="71.0" fitWidth="142.0" layoutX="252.0" layoutY="76.0" onMouseClicked="#gerstionarBandas" onMouseMoved="#selecBandas" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@IMG/bandasIMG.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitulo" layoutX="168.0" layoutY="14.0" styleClass="fontTitulos" stylesheets="@estilo.css" text="Manager" textAlignment="CENTER" textFill="#fffbfb">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelSalas" layoutX="44.0" layoutY="140.0" prefHeight="39.0" prefWidth="83.0" styleClass="imgFont" stylesheets="@estilo.css" text="Salas" textFill="#fffbfb">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelBandas" layoutX="276.0" layoutY="140.0" prefHeight="39.0" prefWidth="107.0" styleClass="imgFont" stylesheets="@estilo.css" text="Bandas" textFill="#fffbfb">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgMiembros" fitHeight="97.0" fitWidth="142.0" layoutX="15.0" layoutY="206.0" onMouseClicked="#gerstionarMiembros" onMouseMoved="#selecMiembros" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@IMG/miembrosIMG.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelMiembros" layoutX="15.0" layoutY="296.0" prefHeight="39.0" prefWidth="142.0" styleClass="imgFont" stylesheets="@estilo.css" text="Miembros" textFill="#fffbfb">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonCerrarSesion" layoutX="294.0" layoutY="303.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="25.0" prefWidth="107.0" styleClass="big-yellow" stylesheets="@estilo.css" text="Cerrar sesión">
+         <font>
+            <Font size="8.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

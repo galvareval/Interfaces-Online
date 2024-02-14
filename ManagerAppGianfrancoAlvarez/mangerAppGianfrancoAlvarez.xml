@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\gianf\OneDrive\Documentos\DAM_2\Interfaces\pruebaRecu_Gianfranco_Álvarez\dist\pruebaRecu_Gianfranco_Álvarez.jar</jar>
+  <outfile>C:\Users\gianf\OneDrive\Documentos\DAM_2\Interfaces\ManagerAppGianfrancoAlvarez\managerAppGianfracoAlvarez.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\gianf\Desktop\manager_ico.ico</icon>
+  <jre>
+    <path>S:\jv</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>
